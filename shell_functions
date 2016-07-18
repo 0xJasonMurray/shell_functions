@@ -1,0 +1,6 @@
+# Example with bastion host
+function host1() { ssh -t -A bastion.example.com "ssh $USER@host1.example.com" ;}
+
+# Example of direct ssh login
+function host2() { ssh $USER@host2.example.com ;}
+
